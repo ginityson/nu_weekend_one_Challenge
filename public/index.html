@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Nu Weekend Challenge #1</title>
+    <link rel="stylesheet" href="../styles/stylesheet.css" />
+    <script src="../scripts/nuweekend.js" charset="utf-8"></script>
+  </head>
+  <body>
+    <form id='empinfo'>
+      <h1>Monthly Salary Calculator</h1>
+      <h2>The Place To Enter Employee Stuff</h2>
+        First Name:<input type='text' id='firstNameIn' name='firstNameIn' value=''>
+        Last Name:<input type='text' id='lastNameIn' name='lastNameIn' value=''>
+        ID Number:<input type='text' id='idNumberIn' name='idNumberIn' value=''>
+        Job Title:<input type='text' id='jobTitleIn' name='jobTitleIn'value=''>
+        Yearly Salary:<input type='text' id='yearlySalaryIn' name='yearlySalaryIn' value=''>
+        <button type="button" name='button' onclick="employeeCorral();">Add Employee</button>
+    </form>
+      <h2>Calculate Monthly Cost:</h2>
+    <div id="salaryTotalMonthlyDiv">
+      <span id="totalMonthlySalary">Monthly Salary Total:</span>
+      <span id="salaryAmount">$0.00</span>
+    </div>
+      <h2>Pick an Employee to Delete</h2>
+        First Name:<input type='text' id='deleteFirstName' value=''>
+        Last Name:<input type='text' id='deleteLastName' value=''>
+        ID Number:<input type='text' id='deleteIdNumber' value=''>
+        <button type="button" name='button' onclick="deleteEmployee();">DELETE</button>
+        <h2>List of Current Employees</h2>
+    <div id='employeeOutputDiv'></div>
+
+  </body>
+</html>
