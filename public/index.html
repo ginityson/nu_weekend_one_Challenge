@@ -10,11 +10,11 @@
     <form id='empinfo'>
       <h1>Monthly Salary Calculator</h1>
       <h2>The Place To Enter Employee Stuff</h2>
-        First Name:<input type='text' id='firstNameIn' name='firstNameIn' value=''>
-        Last Name:<input type='text' id='lastNameIn' name='lastNameIn' value=''>
-        ID Number:<input type='text' id='idNumberIn' name='idNumberIn' value=''>
-        Job Title:<input type='text' id='jobTitleIn' name='jobTitleIn'value=''>
-        Yearly Salary:<input type='text' id='yearlySalaryIn' name='yearlySalaryIn' value=''>
+        <input type='text' id='firstNameIn' name='firstNameIn' value='' placeholder="firstName">
+        <input type='text' id='lastNameIn' name='lastNameIn' value='' placeholder="lastName">
+        <input type='text' id='idNumberIn' name='idNumberIn' value='' placeholder="ID Number">
+        <input type='text' id='jobTitleIn' name='jobTitleIn'value='' placeholder="Job Title">
+        <input type='text' id='yearlySalaryIn' name='yearlySalaryIn' value='' placeholder="Yearly Salary">
         <button type="button" name='button' onclick="employeeCorral();">Add Employee</button>
     </form>
       <h2>Calculate Monthly Cost:</h2>
@@ -23,9 +23,9 @@
       <span id="salaryAmount">$0.00</span>
     </div>
       <h2>Pick an Employee to Delete!</h2>
-        First Name:<input type='text' id='deleteFirstName' value=''>
-        Last Name:<input type='text' id='deleteLastName' value=''>
-        ID Number:<input type='text' id='deleteIdNumber' value=''>
+        <input type='text' id='deleteFirstName' value='' placeholder="firstName">
+        <input type='text' id='deleteLastName' value='' placeholder="lastName">
+        <input type='text' id='deleteIdNumber' value='' placeholder="ID Number">
         <button type="button" name='button' onclick="deleteEmployee();">DELETE</button>
         <h2>List of Current Employees</h2>
     <div id='employeeOutputDiv'></div>
